@@ -1,0 +1,89 @@
+# 1. Capitalizes the first character of a string
+str.capitalize()
+
+# 2. Returns a casefolded version of the string
+str.casefold()
+
+# 3. Returns a centered string
+str.center(width[, fillchar])
+
+# 4. Returns the number of occurrences of a substring in the string
+str.count(substring[, start[, end]])
+
+# 5. Encodes the string using the specified encoding
+str.encode(encoding="utf-8", errors="strict")
+
+# 6. Checks if the string ends with the specified suffix
+str.endswith(suffix[, start[, end]])
+
+# 7. Expands tabs in the string
+str.expandtabs(tabsize=8)
+
+# 8. Finds the first occurrence of a substring in the string
+str.find(substring[, start[, end]])
+
+# 9. Formats the string
+str.format(*args, **kwargs)
+
+# 10. Formats the string using a mapping
+str.format_map(mapping)
+
+# 11. Finds the first occurrence of a substring in the string
+str.index(substring[, start[, end]])
+
+# 12. Checks if the string is alphanumeric
+str.isalnum()
+
+# 13. Checks if the string is alphabetic
+str.isalpha()
+
+# 14. Checks if the string contains ASCII characters
+str.isascii()
+
+# 15. Checks if the string is a decimal
+str.isdecimal()
+
+# 16. Checks if the string is a digit
+str.isdigit()
+
+# 17. Checks if the string is a valid identifier
+str.isidentifier()
+
+# 18. Checks if the string is in lowercase
+str.islower()
+
+# 19. Checks if the string is numeric
+str.isnumeric()
+
+# 20. Checks if the string is printable
+str.isprintable()
+
+# 21. Checks if the string contains only whitespace
+str.isspace()
+
+# 22. Checks if the string is in title case
+str.istitle()
+
+# 23. Checks if the string is in uppercase
+str.isupper()
+
+# 24. Joins the elements of an iterable to the string
+str.join(iterable)
+
+# 25. Left-justifies the string in a field of a given width
+str.ljust(width[, fillchar])
+
+# 26. Converts the string to lowercase
+str.lower()
+
+# 27. Removes leading characters from the string
+str.lstrip([characters])
+
+# 28. Creates a translation table
+str.maketrans(x[, y[, z]])
+
+# 29. Splits the string at the first occurrence of the separator
+str.partition(separator)
+
+# 30. Replaces occurrences of a substring in the string
+str.replace(old, new[, count])

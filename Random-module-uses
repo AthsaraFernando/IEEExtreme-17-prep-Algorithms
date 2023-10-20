@@ -1,0 +1,50 @@
+import random
+import string
+
+# Generating random integers within a specific range
+random_integer = random.randint(1, 100)
+
+# Generating random floating-point numbers between 0 and 1
+random_float = random.random()
+
+# Selecting a random element from a list or any sequence
+my_list = [1, 2, 3, 4, 5]
+random_element = random.choice(my_list)
+
+# Shuffling a list in-place
+my_list = [1, 2, 3, 4, 5]
+random.shuffle(my_list)
+
+# Picking a random sample from a list with replacement
+random_sample_with_replacement = random.choices(my_list, k=3)
+
+# Picking a random sample from a list without replacement
+random_sample_without_replacement = random.sample(my_list, k=3)
+
+# Generating a random number from a Gaussian distribution
+random_number_with_normal_distribution = random.gauss(0, 1)
+
+# Generating a random choice from multiple sequences
+sequence_1 = [1, 2, 3]
+sequence_2 = ['a', 'b', 'c']
+random_choice = random.choices([sequence_1, sequence_2])[0]
+
+# Generating secure random numbers for cryptographic applications
+secure_random = random.SystemRandom()
+secure_random_number = secure_random.randint(1, 100)
+
+# Creating randomized passwords or tokens
+password_characters = string.ascii_letters + string.digits + string.punctuation
+random_password = ''.join(random.choice(password_characters) for _ in range(12))
+
+# Printing the results
+print(f"Random Integer: {random_integer}")
+print(f"Random Float: {random_float}")
+print(f"Random Element from List: {random_element}")
+print(f"Shuffled List: {my_list}")
+print(f"Random Sample with Replacement: {random_sample_with_replacement}")
+print(f"Random Sample without Replacement: {random_sample_without_replacement}")
+print(f"Random Number from Gaussian Distribution: {random_number_with_normal_distribution}")
+print(f"Random Choice from Multiple Sequences: {random_choice}")
+print(f"Secure Random Number: {secure_random_number}")
+print(f"Random Password: {random_password}")

@@ -14,10 +14,10 @@ def shortest_path(graph, start, end):
         if v not in path:
             path = path + [v]
             if v == end:
-                return path
+                return path, cost
             for (next_v, c) in graph.get(v, ()):
                 heapq.heappush(heap, (cost + c, next_v, path))
-    return []
+    return [], 0
 
 # Test the function with a sample graph
 graph = {'A': [('B', 2), ('C', 5)],
@@ -26,4 +26,6 @@ graph = {'A': [('B', 2), ('C', 5)],
          'D': [('E', 5)],
          'E': []}
 
-print(shortest_path(graph, 'A', 'E'))  # Output: ['A', 'B', 'D', 'E']
+path, distance = shortest_path(graph, 'A', 'E')
+print(f"Shortest Path: {path}")  # Output: Shortest Path: ['A', 'B', 'D', 'E']
+print(f"Distance: {distance}")  # Output: Distance: 8
